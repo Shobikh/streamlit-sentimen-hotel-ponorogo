@@ -1,0 +1,34 @@
+{
+    "Hotel Amaris Ponorogo": {
+        "Positif": {
+            "bagus": "Kamar bersih dan bagus banget. Interior ramah keluarga.",
+            "nyaman": "Lounge nyaman banget.",
+            "sangat bersih": "Kebersihan sangat terjaga dan rapi. Dekat dengan tempat belanja. Area parkir luas banget.",
+            "pelayanan mantap": "Harga sesuai pelayanan mantap",
+            "staf ramah": "Semua pelayanan menyenangkan dari makanan, receptionist ramah juga fasilitas." 
+        },
+        "Negatif": {
+            "kurang bersih": "kamar dan kamar mandi kurang bersih",
+            "kamar kecil": "Hotelnya di dalam mal. pas masuk kamar bau apek. ruangannya kecil meja kecil, lemari sangat kecil.",
+            "tidak ada pemanas air": "Harga kemahalan, teko pemanas air dkamar sj tidak ada , kamar kecil , makanan sedikit pilihannya.. krn kemalaman jd akhirnya stay di amaris",
+            "harga tidak sesuai": "Kurang puas dengan pelayanan hotel, hotel bintang 2 tapi harga sudah seperti bintang 4.",
+            "toilet kotor": "kamar bagus, toilet agak kotor"
+        }
+    },
+    "Hotel Maesa Ponorogo": {
+        "Positif": {
+            "nyaman & bersih": "Bagus, nyaman dan bersih",
+            "pelayanan ramah": "Bagus pelayanan ramah",
+            "pelayanan baik": "Bagus kamar baik pelayanan baik masakan juga enak",
+            "area bersih": "Menu makanan hotel di luar ekspektasi. Area yang aman dan bersih.",
+            "staf sangat ramah": "Layanannya sangat ramah & bagus. Saya sendiri tempohari salah tanggal reservasi, tetapi dibantu oleh receptionist agar dapat diganti tanggalnya."
+        },
+        "Negatif": {
+            "parkir kurang besar": "Lahan parkirnya saja yang kurang besar, karena masuknya seperti masuk gang/lorong dan didalam masih kurang luas",
+            "tidak ada view": "Pesen dapat lantai 2 pojok. View kamar tidak ada, sumpek, sirkulasi udara kurang, kamar mandi kurang wangi agak pengap.",
+            "parkir sempit": "Lahan parkir terlalu sempit menu makanan juga variasinya kurang byk",
+            "air panas bermasalah": "kamar mandi terlalu kecil dan air panas sangat panas, sehingga kran air dingin ikut panas",
+            "parkir kurang luas": "Bagus,servis memuaskan,makanan bersih lumayan enak meskipun tidak banyak pilihan,hanya tempat parkir kurang luas"
+        }
+    }
+}

@@ -2,7 +2,7 @@
 
 Aplikasi web interaktif yang dibuat menggunakan Streamlit untuk menganalisis dan memvisualisasikan sentimen dari ulasan pengguna terhadap dua hotel di Ponorogo: **Hotel Amaris** dan **Hotel Maesa**. Proyek ini merupakan bagian dari penelitian skripsi untuk memenuhi syarat kelulusan.
 
-[![Streamlit App](https://app-sentimen-hotel-ponorogo.streamlit.app/)setelah deploy!
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://app-sentimen-hotel-ponorogo.streamlit.app/)
 
 ## 📜 Deskripsi
 
@@ -52,5 +52,7 @@ Aplikasi ini mengimplementasikan model klasifikasi **Naive Bayes** untuk menentu
 
 ## 🖼️ Tampilan Aplikasi
 
-![Tampilan Halaman Analisis](assets/screenshot1.png)
-![Tampilan Halaman Uji Model](assets/screenshot2.png)
+![Tampilan Halaman Latar Belakang & Profil Hotel](assets/latar_belakang_dan_profil.png)
+![Tampilan Halaman Alur Kerja](assets/alur_kerja_model.png)
+![Tampilan Halaman Hasil Analisa](assets/hasil_analisis.png)
+![Tampilan Halaman Uji Model](assets/coba_model.png)

@@ -2,7 +2,7 @@
 
 Aplikasi web interaktif yang dibuat menggunakan Streamlit untuk menganalisis dan memvisualisasikan sentimen dari ulasan pengguna terhadap dua hotel di Ponorogo: **Hotel Amaris** dan **Hotel Maesa**. Proyek ini merupakan bagian dari penelitian skripsi untuk memenuhi syarat kelulusan.
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://URL-APLIKASI-STREAMLIT-ANDA.streamlit.app/) <-- Ganti URL ini setelah deploy!
+[![Streamlit App](https://app-sentimen-hotel-ponorogo.streamlit.app/)setelah deploy!
 
 ## 📜 Deskripsi
 
@@ -27,7 +27,7 @@ Aplikasi ini mengimplementasikan model klasifikasi **Naive Bayes** untuk menentu
 
 1.  **Clone repository ini:**
     ```bash
-    git clone [https://github.com/username-anda/nama-repo.git](https://github.com/username-anda/nama-repo.git)
+    git clone https://github.com/Shobikh/streamlit-sentimen-hotel-ponorogo.git
     cd nama-repo
     ```
 
@@ -51,8 +51,6 @@ Aplikasi ini mengimplementasikan model klasifikasi **Naive Bayes** untuk menentu
     ```
 
 ## 🖼️ Tampilan Aplikasi
-
-*Tambahkan beberapa screenshot menarik dari aplikasi Anda di sini untuk memberikan gambaran visual.*
 
 ![Tampilan Halaman Analisis](assets/screenshot1.png)
 ![Tampilan Halaman Uji Model](assets/screenshot2.png)

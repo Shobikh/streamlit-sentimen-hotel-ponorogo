@@ -27,19 +27,19 @@ def load_model_and_vectorizer(model_path, vectorizer_path):
     
 @st.cache_data
 def load_review_examples():
-    with open('data\kata_berpengaruh.json', 'r', encoding='utf-8') as f:
+    with open('data/kata_berpengaruh.json', 'r', encoding='utf-8') as f:
         return json.load(f)
 
 # --- DATA TERPUSAT UNTUK KEDUA HOTEL ---
 # Informasi spesifik, path gambar, dan path model untuk setiap hotel
 data_hotel = {
     "Hotel Amaris Ponorogo": {
-        "gambar": r'assets\amaris.png',
+        "gambar": r'assets/amaris.png',
         "deskripsi": "Hotel Amaris Ponorogo merupakan bagian dari jaringan hotel Santika Indonesia yang dikenal dengan konsepnya yang modern, minimalis, dan cerdas. Berdasarkan ulasan dari berbagai platform, hotel ini unggul karena lokasinya yang sangat strategis di pusat kota, berdekatan dengan Ponorogo City Center (PCC) dan Alun-Alun. Pengunjung sering memuji kebersihan kamar dan standar pelayanan yang konsisten. Hotel ini menjadi pilihan utama bagi wisatawan bisnis dan keluarga yang mencari akomodasi modern dan efisien di jantung kota Ponorogo.",
-        "wordcloud_positif": r"assets\wc_amaris_positif.png",
-        "wordcloud_negatif": r"assets\wc_amaris_negatif.png",
-        "model_path": r"models\model_sentimen_amaris.pkl",
-        "vectorizer_path": r'models\tfidf_vectorizer_amaris.pkl',
+        "wordcloud_positif": r"assets/wc_amaris_positif.png",
+        "wordcloud_negatif": r"assets/wc_amaris_negatif.png",
+        "model_path": r"models/model_sentimen_amaris.pkl",
+        "vectorizer_path": r'models/tfidf_vectorizer_amaris.pkl',
         "evaluasi": {"Akurasi": 93, "Presisi": 93, "Recall": 93},
         "distribusi": pd.DataFrame({'Sentimen': ['Positif', 'Negatif', 'Netral'], 'Jumlah Ulasan': [1389, 364, 259]}),
         "conf_matrix": [
@@ -49,12 +49,12 @@ data_hotel = {
         ]
     },
     "Hotel Maesa Ponorogo": {
-        "gambar": r"assets\maesa.jpg",
+        "gambar": r"assets/maesa.jpg",
         "deskripsi": "Hotel Maesa Ponorogo menawarkan pengalaman menginap yang berbeda dengan nuansa klasik dan sentuhan budaya Jawa yang kental. Dari rangkuman ulasan, keunggulan utama hotel ini adalah suasananya yang asri, kamar yang relatif lebih luas, dan keberadaan fasilitas kolam renang yang menjadi nilai tambah. Pengunjung sering menyebutkan keramahan staf yang terasa personal dan familier. Hotel ini menjadi pilihan menarik bagi mereka yang mencari ketenangan dan pengalaman menginap dengan kearifan lokal.",
-        "wordcloud_positif": r"assets\wc_maesa_positif.png",
-        "wordcloud_negatif": r"assets\wc_maesa_negatif.png",
-        "model_path": r"models\model_sentimen_maesa.pkl",
-        "vectorizer_path": r"models\tfidf_vectorizer_maesa.pkl",
+        "wordcloud_positif": r"assets/wc_maesa_positif.png",
+        "wordcloud_negatif": r"assets/wc_maesa_negatif.png",
+        "model_path": r"models/model_sentimen_maesa.pkl",
+        "vectorizer_path": r"models/tfidf_vectorizer_maesa.pkl",
         "evaluasi": {"Akurasi": 96, "Presisi": 96, "Recall": 96},
         "distribusi": pd.DataFrame({'Sentimen': ['Positif', 'Negatif', 'Netral'], 'Jumlah Ulasan': [856, 113, 92]}),
         "conf_matrix": [

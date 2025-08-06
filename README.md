@@ -28,7 +28,7 @@ Aplikasi ini mengimplementasikan model klasifikasi **Naive Bayes** untuk menentu
 1.  **Clone repository ini:**
     ```bash
     git clone https://github.com/Shobikh/streamlit-sentimen-hotel-ponorogo.git
-    cd nama-repo
+    cd streamlit-sentimen-hotel-ponorogo
     ```
 
 2.  **Buat dan aktifkan lingkungan virtual (disarankan):**

@@ -4,18 +4,18 @@ Aplikasi web interaktif yang dibuat menggunakan Streamlit untuk menganalisis dan
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://app-sentimen-hotel-ponorogo.streamlit.app/)
 
-## 📜 Deskripsi
+## Deskripsi
 
 Aplikasi ini mengimplementasikan model klasifikasi **Naive Bayes** untuk menentukan sentimen (positif, negatif, netral) dari ulasan yang dikumpulkan dari berbagai platform online. Pengguna dapat membandingkan performa hotel, melihat kata kunci yang paling berpengaruh, dan bahkan mencoba model dengan ulasan mereka sendiri.
 
-## ✨ Fitur Utama
+## Fitur Utama
 
 -   **Dashboard Interaktif**: Membandingkan hasil analisis untuk dua hotel yang berbeda.
 -   **Visualisasi Data**: Menampilkan Word Cloud, distribusi sentimen, dan Confusion Matrix yang dinamis.
 -   **Analisis Kata Berpengaruh**: Menunjukkan frasa kunci yang paling memengaruhi prediksi sentimen positif dan negatif, lengkap dengan contoh ulasan nyata.
 -   **Uji Coba Model Real-time**: Fitur untuk memasukkan teks ulasan baru dan mendapatkan prediksi sentimen secara langsung.
 
-## 🛠️ Teknologi yang Digunakan
+## Teknologi yang Digunakan
 
 -   **Bahasa**: Python
 -   **Library Analisis**: Pandas, Scikit-learn
@@ -23,7 +23,7 @@ Aplikasi ini mengimplementasikan model klasifikasi **Naive Bayes** untuk menentu
 -   **Ekstraksi Fitur**: TF-IDF
 -   **Framework Web**: Streamlit
 
-## 🚀 Cara Menjalankan Aplikasi Secara Lokal
+## Cara Menjalankan Aplikasi Secara Lokal
 
 1.  **Clone repository ini:**
     ```bash
@@ -34,10 +34,10 @@ Aplikasi ini mengimplementasikan model klasifikasi **Naive Bayes** untuk menentu
 2.  **Buat dan aktifkan lingkungan virtual (disarankan):**
     ```bash
     python -m venv venv
-    # Windows
-    .\venv\Scripts\activate
-    # Mac/Linux
-    source venv/bin/activate
+    
+    .\venv\Scripts\activate # Windows
+    
+    source venv/bin/activate # Mac/Linux
     ```
 
 3.  **Instal semua library yang dibutuhkan:**
@@ -50,7 +50,7 @@ Aplikasi ini mengimplementasikan model klasifikasi **Naive Bayes** untuk menentu
     streamlit run app.py
     ```
 
-## 🖼️ Tampilan Aplikasi
+## Tampilan Aplikasi
 
 ![Tampilan Halaman Latar Belakang & Profil Hotel](assets/latar_belakang_dan_profil.png)
 ![Tampilan Halaman Alur Kerja](assets/alur_kerja_model.png)

@@ -40,12 +40,12 @@ data_hotel = {
         "wordcloud_negatif": r"assets/wc_amaris_negatif.png",
         "model_path": r"models/model_sentimen_amaris.pkl",
         "vectorizer_path": r'models/tfidf_vectorizer_amaris.pkl',
-        "evaluasi": {"Akurasi": 93, "Presisi": 93, "Recall": 93},
-        "distribusi": pd.DataFrame({'Sentimen': ['Positif', 'Negatif', 'Netral'], 'Jumlah Ulasan': [1389, 364, 259]}),
+        "evaluasi": {"Akurasi": 96, "Presisi": 97, "Recall": 96},
+        "distribusi": pd.DataFrame({'Sentimen': ['Positif', 'Negatif', 'Netral'], 'Jumlah Ulasan': [1646, 193, 153]}),
         "conf_matrix": [
-            [236, 6, 17],
-            [6, 315, 43],
-            [34, 39, 1316]
+            [152, 1, 0],
+            [1, 192, 5],
+            [33, 35, 1578]
         ]
     },
     "Hotel Maesa Ponorogo": {
@@ -55,12 +55,12 @@ data_hotel = {
         "wordcloud_negatif": r"assets/wc_maesa_negatif.png",
         "model_path": r"models/model_sentimen_maesa.pkl",
         "vectorizer_path": r"models/tfidf_vectorizer_maesa.pkl",
-        "evaluasi": {"Akurasi": 96, "Presisi": 96, "Recall": 96},
-        "distribusi": pd.DataFrame({'Sentimen': ['Positif', 'Negatif', 'Netral'], 'Jumlah Ulasan': [856, 113, 92]}),
+        "evaluasi": {"Akurasi": 96, "Presisi": 97, "Recall": 96},
+        "distribusi": pd.DataFrame({'Sentimen': ['Positif', 'Negatif', 'Netral'], 'Jumlah Ulasan': [879, 104, 73]}),
         "conf_matrix": [
-            [111, 0, 2],
-            [1, 90, 1],
-            [24, 18, 814]
+            [103, 1, 0],
+            [0, 73, 0],
+            [22, 22, 835]
         ]
     }
 }
@@ -227,17 +227,32 @@ elif page == "📊 Hasil Analisis":
         st.markdown("<h5 style='text-align: center; color: green;'>👍 Sentimen Positif</h5>", unsafe_allow_html=True)
         st.write("") # Memberi spasi
         positif_examples = ulasan_hotel_terpilih.get("Positif", {})
-        for word, example in positif_examples.items():
+
+        for word, review_data in positif_examples.items():
             with st.expander(f"**{word.capitalize()}**"):
-                st.write(f"_{example}_")
+                st.write(f"_{review_data['review']}_")
+
+                #Keterangan tambahan
+                reviewer_name = review_data.get("reviewer","Anonymous")
+                platform = review_data.get("platform")
+                rating = review_data.get("rating")
+                st.caption(f"**Diulas oleh {reviewer_name} di {platform} dengan rating {rating}**")
+            
 
     with col2:
         st.markdown("<h5 style='text-align: center; color: red;'>👎 Sentimen Negatif</h5>", unsafe_allow_html=True)
         st.write("") # Memberi spasi
         negatif_examples = ulasan_hotel_terpilih.get("Negatif", {})
-        for word, example in negatif_examples.items():
+
+        for word, review_data in negatif_examples.items():
             with st.expander(f"**{word.capitalize()}**"):
-                st.write(f"_{example}_")
+                st.write(f"_{review_data['review']}_")
+
+                #Keterangan tambahan
+                reviewer_name = review_data.get("reviewer","Anonymous")
+                platform = review_data.get("platform")
+                rating = review_data.get("rating")
+                st.caption(f"**Diulas oleh {reviewer_name} di {platform} dengan rating {rating}**")
 
     st.markdown("---")
     

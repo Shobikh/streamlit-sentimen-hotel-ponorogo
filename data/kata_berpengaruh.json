@@ -1,34 +1,86 @@
 {
-    "Hotel Amaris Ponorogo": {
-        "Positif": {
-            "bagus": "Kamar bersih dan bagus banget. Interior ramah keluarga.",
-            "nyaman": "Lounge nyaman banget.",
-            "sangat bersih": "Kebersihan sangat terjaga dan rapi. Dekat dengan tempat belanja. Area parkir luas banget.",
-            "pelayanan mantap": "Harga sesuai pelayanan mantap",
-            "staf ramah": "Semua pelayanan menyenangkan dari makanan, receptionist ramah juga fasilitas." 
+    "Hotel Amaris Ponorogo":{
+        "Positif":{
+            "Nyaman":{
+                "review": "Bersih dan nyaman...buat traveler yg singgah di Ponorogo",
+                "reviewer": "Mustofa Sanggra",
+                "platform": "Google Maps",
+                "rating": "3/5"
+            },
+            "Kamar Bersih":{
+                "review": "Kamar bersih dan bagus banget. Interior ramah keluarga.",
+                "reviewer": "Ahdika Ahdika",
+                "platform": "Tiket.com",
+                "rating": "1/5"
+            },
+            "Bagus":{
+                "review": "Hotel yg bagus untuk di kota Ponorogo",
+                "reviewer": "Chandra Hadiwijaya",
+                "platform": "Google Maps",
+                "rating": "3/5"
+            }
         },
-        "Negatif": {
-            "kurang bersih": "kamar dan kamar mandi kurang bersih",
-            "kamar kecil": "Hotelnya di dalam mal. pas masuk kamar bau apek. ruangannya kecil meja kecil, lemari sangat kecil.",
-            "tidak ada pemanas air": "Harga kemahalan, teko pemanas air dkamar sj tidak ada , kamar kecil , makanan sedikit pilihannya.. krn kemalaman jd akhirnya stay di amaris",
-            "harga tidak sesuai": "Kurang puas dengan pelayanan hotel, hotel bintang 2 tapi harga sudah seperti bintang 4.",
-            "toilet kotor": "kamar bagus, toilet agak kotor"
+        "Negatif":{
+            "Kamar kecil":{
+                "review": "Kamarnya kecil dan menghadap ke atap tanpa pemandangan dan kalau jendela di buka jadi silau",
+                "reviewer": "DR",
+                "platform": "Tiket.com",
+                "rating": "1,8/5"
+            },
+            "Air kotor":{
+                "review": "Air Kran kotor sekali, warnanya hitam",
+                "reviewer": "Wijanto S.",
+                "platform": "Traveloka",
+                "rating": "6,1/10"
+            },
+            "Mahal":{
+                "review": "Harga kemahalan, teko pemanas air dkamar sj tdk ada , kamar kecil , makanan sedikit pilihannya.. krn kemalaman jd akhirnya stay di amaris",
+                "reviewer": "wiguna",
+                "platform": "Agoda",
+                "rating": "2,8/10"
+            }
         }
     },
-    "Hotel Maesa Ponorogo": {
-        "Positif": {
-            "nyaman & bersih": "Bagus, nyaman dan bersih",
-            "pelayanan ramah": "Bagus pelayanan ramah",
-            "pelayanan baik": "Bagus kamar baik pelayanan baik masakan juga enak",
-            "area bersih": "Menu makanan hotel di luar ekspektasi. Area yang aman dan bersih.",
-            "staf sangat ramah": "Layanannya sangat ramah & bagus. Saya sendiri tempohari salah tanggal reservasi, tetapi dibantu oleh receptionist agar dapat diganti tanggalnya."
+    "Hotel Maesa Ponorogo":{
+        "Positif":{
+            "Nyaman":{
+                "review": "Quickly check in process, nice room with completely amenities, excellent  staff and fast response. Over all is wonderful, you have to try if you visit to this city.",
+                "reviewer": "MP",
+                "platform": "Tiket.com",
+                "rating": "4/5"
+            },
+            "Bagus":{
+                "review": "Tempat nyaman bersih murah dg fasilitas yg bagus",
+                "reviewer": "Novita",
+                "platform": "Agoda",
+                "rating": "8,8/10"
+            },
+            "Pelayanan ramah":{
+                "review": "Pelayanan memuaskan. Kamarnya bersih dan ramah untuk anak-anak. Sarapannya juga enak",
+                "reviewer": "Kusuma",
+                "platform": "Agoda",
+                "rating": "10/10"
+            }
         },
-        "Negatif": {
-            "parkir kurang besar": "Lahan parkirnya saja yang kurang besar, karena masuknya seperti masuk gang/lorong dan didalam masih kurang luas",
-            "tidak ada view": "Pesen dapat lantai 2 pojok. View kamar tidak ada, sumpek, sirkulasi udara kurang, kamar mandi kurang wangi agak pengap.",
-            "parkir sempit": "Lahan parkir terlalu sempit menu makanan juga variasinya kurang byk",
-            "air panas bermasalah": "kamar mandi terlalu kecil dan air panas sangat panas, sehingga kran air dingin ikut panas",
-            "parkir kurang luas": "Bagus,servis memuaskan,makanan bersih lumayan enak meskipun tidak banyak pilihan,hanya tempat parkir kurang luas"
+        "Negatif":{
+            "Parkir sempit":{
+                "review": "Parkiran sempit, lahan parkir dibuat manten.",
+                "reviewer": "Meidina Marisa",
+                "platform": "Google Maps",
+                "rating": "1/5"
+            },
+            "Air Mineral":{
+                "review": "Bad News : Parkir sempit, untuk kamar mandi bau dan tidak layak, air mineral di dalam kamar juga bayar serta ada cas biaya yang tidak di include kan dalam harga awal pembelian, menu saran sangat tidak oke, AC bermasalah, handuk tidak bersih, harga premier dan deluxe tidak sesuai dengan fasilitas didalamnya.\nGood News : Smoking room oke, kamar oke, kasur oke dan nyaman.",
+                "reviewer": "Faris Huda",
+                "platform": "Google Maps",
+                "rating": "1/5"
+            },
+            "Panas":{
+                "review": "AC nya di kamar super panas, sudah sempat komplain dan dipindah kamar juga masih sama, sepertinya tidak pernah di servis dan isi freon. Air nya sangat kecil, mandi sampai tidak bersih. Menu sarapan kurang.",
+                "reviewer": "Mira Feliciana Dewi",
+                "platform": "Traveloka",
+                "rating": "6/10"
+            }
         }
     }
 }

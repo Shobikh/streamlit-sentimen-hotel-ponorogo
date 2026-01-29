@@ -293,8 +293,8 @@ elif page == "📊 Hasil Analisis":
         st.dataframe(df_cm.style.background_gradient(cmap='Blues', axis=None))
         st.subheader("Classification Report")
         st.write(
-                    "Classification Report menunjukkan performa model dalam mengklasifikasikan label. "
-                    "Berdasarkan tingkat presisi (precision), sensivitas (recall), keseimbangan keduanya (f1-score), dan jumlah sampel (support)"
+                    "Classification Report menunjukkan performa model dalam mengklasifikasikan label "
+                    "berdasarkan tingkat presisi (precision), sensitivitas (recall), keseimbangan keduanya (f1-score), dan jumlah sampel (support)"
                 )
         st.table(hotel_terpilih["classification_report"])
 

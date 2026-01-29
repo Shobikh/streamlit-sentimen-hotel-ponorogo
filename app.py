@@ -40,13 +40,22 @@ data_hotel = {
         "wordcloud_negatif": r"assets/wc_amaris_negatif.png",
         "model_path": r"models/model_sentimen_amaris.pkl",
         "vectorizer_path": r'models/tfidf_vectorizer_amaris.pkl',
-        "evaluasi": {"Akurasi": 96, "Presisi": 97, "Recall": 96},
+        "evaluasi": {"Accuracy": 96, "Precision": 89, "Recall": 97, "F1-Score": 93},
         "distribusi": pd.DataFrame({'Sentimen': ['Positif', 'Negatif', 'Netral'], 'Jumlah Ulasan': [1646, 193, 153]}),
         "conf_matrix": [
             [152, 1, 0],
             [1, 192, 5],
             [33, 35, 1578]
-        ]
+        ],
+        "classification_report": pd.DataFrame(
+            {
+                "precision": ["0.82", "0.84", "1.00"],
+                "recall": ["0.99", "0.97", "0.96"],
+                "f1-score": ["0.90", "0.90", "0.98"],
+                "support": ["153 Sampel", "198 Sampel", "1646 Sampel"]
+            },
+            index=["Negatif", "Netral", "Positif"]
+        )
     },
     "Hotel Maesa Ponorogo": {
         "gambar": r"assets/maesa.jpg",
@@ -55,13 +64,22 @@ data_hotel = {
         "wordcloud_negatif": r"assets/wc_maesa_negatif.png",
         "model_path": r"models/model_sentimen_maesa.pkl",
         "vectorizer_path": r"models/tfidf_vectorizer_maesa.pkl",
-        "evaluasi": {"Akurasi": 96, "Presisi": 97, "Recall": 96},
+        "evaluasi": {"Accuracy": 95, "Precision": 86, "Recall": 98, "F1-Score": 91},
         "distribusi": pd.DataFrame({'Sentimen': ['Positif', 'Negatif', 'Netral'], 'Jumlah Ulasan': [879, 104, 73]}),
         "conf_matrix": [
             [103, 1, 0],
             [0, 73, 0],
             [22, 22, 835]
-        ]
+        ],
+        "classification_report": pd.DataFrame(
+            {
+                "precision": ["0.82", "0.76", "1.00"],
+                "recall": ["0.99", "1.00", "0.95"],
+                "f1-score": ["0.90", "0.86", "0.97"],
+                "support": ["104 Sampel", "73 Sampel", "879 Sampel"],
+            },
+            index=["Negatif", "Netral", "Positif"]
+        )
     }
 }
 
@@ -204,12 +222,13 @@ elif page == "📊 Hasil Analisis":
     st.title(f"📊 Hasil Analisis Mendalam: {pilihan_hotel}")
     st.markdown("---")
     
-    st.subheader("Performa Model (Berdasarkan Data Uji)")
+    st.subheader("Performa Model (Berdasarkan Data Aktual)")
     eval_data = hotel_terpilih["evaluasi"]
-    col1, col2, col3 = st.columns(3)
-    col1.metric(label="Akurasi", value=f"{eval_data['Akurasi']}%", delta_color="off")
-    col2.metric(label="Presisi (Weighted Avg)", value=f"{eval_data['Presisi']}%", delta_color="off")
-    col3.metric(label="Recall (Weighted Avg)", value=f"{eval_data['Recall']}%", delta_color="off")
+    col1, col2, col3, col4 = st.columns(4)
+    col1.metric(label="Accuracy", value=f"{eval_data['Accuracy']}%", delta_color="off")
+    col2.metric(label="Precision (Macro Avg)", value=f"{eval_data['Precision']}%", delta_color="off")
+    col3.metric(label="Recall (Macro Avg)", value=f"{eval_data['Recall']}%", delta_color="off")
+    col4.metric(label="F1-Score (Macro Avg)", value=f"{eval_data['F1-Score']}%", delta_color="off")
     
     st.markdown("---")
     st.subheader("💡 Kata Kunci Paling Berpengaruh & Contoh Ulasannya")
@@ -256,7 +275,7 @@ elif page == "📊 Hasil Analisis":
 
     st.markdown("---")
     
-    with st.expander("Lihat Detail Performa dengan Confusion Matrix"):
+    with st.expander("Lihat Detail Performa dengan Confusion Matrix dan Classification Report"):
         st.subheader("Visualisasi Confusion Matrix")
         st.write(
             "Confusion Matrix menunjukkan seberapa baik model dapat membedakan antar kelas. "
@@ -272,6 +291,12 @@ elif page == "📊 Hasil Analisis":
         
         # Menampilkan DataFrame dengan gaya heatmap
         st.dataframe(df_cm.style.background_gradient(cmap='Blues', axis=None))
+        st.subheader("Classification Report")
+        st.write(
+                    "Classification Report menunjukkan performa model dalam mengklasifikasikan label. "
+                    "Berdasarkan tingkat presisi (precision), sensivitas (recall), keseimbangan keduanya (f1-score), dan jumlah sampel (support)"
+                )
+        st.table(hotel_terpilih["classification_report"])
 
     st.markdown("---")
 
@@ -298,7 +323,8 @@ elif page == "🧪 Coba Model":
     # Kode untuk halaman ini tidak berubah
     st.title(f"🧪 Uji Coba Model Klasifikasi: {pilihan_hotel}")
     st.markdown("---")
-    st.info(f"Anda sedang menguji model yang dilatih khusus untuk **{pilihan_hotel}**.")
+    st.info(f"Anda sedang menguji model Naive Bayes* yang dilatih khusus untuk **{pilihan_hotel}**.")
+    st.caption("*Cara Kerja Model Naive Bayes Didasarkan pada Probabilitas (Teorema Bayes)")
 
     model, vectorizer = load_model_and_vectorizer(hotel_terpilih['model_path'], hotel_terpilih['vectorizer_path'])
 
